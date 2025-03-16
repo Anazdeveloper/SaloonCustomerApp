@@ -40,7 +40,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_flavorizr: ^2.3.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
@@ -89,3 +89,31 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flavorizr:
+  flavors:
+    dev:
+      app:
+        name: "Dev - SaloonCustomer"
+
+      android:
+        applicationId: "com.salooncustomer.android.dev"
+      ios:
+        bundleId: "com.salooncustomer.ios.dev"
+
+    stage:
+      app:
+        name: "Stage - SaloonCustomer"
+
+      android:
+        applicationId: "com.salooncustomer.android.stage"
+      ios:
+        bundleId: "com.salooncustomer.ios.stage"
+
+    prod:
+      app:
+        name: "SaloonCustomer"
+
+      android:
+        applicationId: "com.salooncustomer.android"
+      ios:
+        bundleId: "com.salooncustomer.ios"
